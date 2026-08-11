@@ -11,8 +11,6 @@ cask "carrel" do
 
   app "Carrel.app"
 
-  # Carrel is signed with a personal Apple Development certificate (not
-  # notarized), so clear any quarantine attribute after install.
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Carrel.app"]
