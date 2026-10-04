@@ -11,7 +11,7 @@ cask "carrel" do
 
   app "Carrel.app"
 
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Carrel.app"]
   end
