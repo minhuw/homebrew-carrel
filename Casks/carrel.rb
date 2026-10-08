@@ -1,6 +1,6 @@
 cask "carrel" do
-  version "1.140.0+0.1.0"
-  sha256 "f283ea1b0d734c57538b2ed7f4473445983a47b033a07440b4d5552ea919fe38"
+  version "1.141.0+0.1.0"
+  sha256 "4ab4d3552f976d0ef1f535bbf5847ab2b725ff9b6264e019ca102b468616516d"
 
   url "https://github.com/minhuw/carrel/releases/download/v#{version}/Carrel-darwin-arm64-#{version}.zip"
   name "Carrel"
@@ -11,7 +11,7 @@ cask "carrel" do
 
   app "Carrel.app"
 
-  postflight_steps do
+  postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Carrel.app"]
   end
