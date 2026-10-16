@@ -1,6 +1,6 @@
 cask "carrel" do
-  version "1.141.0+0.1.0"
-  sha256 "4ab4d3552f976d0ef1f535bbf5847ab2b725ff9b6264e019ca102b468616516d"
+  version "1.142.0+0.1.0"
+  sha256 "39811f6c585fbf8d0185bae50a9b39ebbd7506f45db4d41eb219c6e0ac4715bc"
 
   url "https://github.com/minhuw/carrel/releases/download/v#{version}/Carrel-darwin-arm64-#{version}.zip"
   name "Carrel"
